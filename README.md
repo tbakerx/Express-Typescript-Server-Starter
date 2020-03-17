@@ -1,5 +1,5 @@
-# NextGen Real Estate API
-This is an express + typescript server for allowing access to our stored MLS listings from Listhub. 
+# Express + Typescript API Server Boilerplate
+This is an express + typescript server that I built to be a good starting point for an API server
 
 ### Features
 - [✔] Typescript
@@ -36,7 +36,6 @@ This is an express + typescript server for allowing access to our stored MLS lis
 ├── dist
 ├── .gitignore
 ├── node_modules
-├── .env.example
 ├── README.md
 ├── package-lock.json
 ├── package.json
@@ -47,7 +46,6 @@ This is an express + typescript server for allowing access to our stored MLS lis
 
 ### To run in development
 1. Clone the repo
-2. Create and populate .env file at root
 3. ``npm install``
 4. ``npm run dev``
 
@@ -60,7 +58,7 @@ This is an express + typescript server for allowing access to our stored MLS lis
 
 ### To view swagger documentation
 1. Run in development
-2. navigate to localhost:{port}/api/v1/api-docs
+2. navigate to localhost:{port}/api-docs
 
 ### To view code coverage
 1. Run tests
