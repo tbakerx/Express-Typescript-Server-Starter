@@ -1,0 +1,57 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/api/v1",
+  "schemes": [
+    "http"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Base route - Hello world",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad request"
+          }
+        }
+      }
+    },
+    "/exampleuser": {
+      "get": {
+        "tags": [
+          "Example User"
+        ],
+        "summary": "Pull a user by id from a random placeholder service",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad request"
+          }
+        },
+        "content": {
+          "application/json": {}
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "Specifies the user id to search",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    }
+  }
+}
